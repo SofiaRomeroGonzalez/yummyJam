@@ -1,0 +1,223 @@
+/* ==========================================================================
+   ESTILO GLOBAL (Vibra Kawaii & Hogareña)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFBF7; /* El tono crema suave de tu portada */
+    color: #4A332D;            /* Marrón chocolate para textos ultra legibles y cálidos */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka', sans-serif; /* Tipografía redondeada y súper tierna */
+    color: #D36B78;                     /* El rosa rojizo de "Jam" en tu logo */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   HEADER Y LOGO
+   ========================================================================== */
+header {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px dashed #F3C1C6; /* Línea discontinua estilo artesanal */
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    transition: transform 0.3s ease;
+}
+
+#logo img:hover {
+    transform: scale(1.05) rotate(-2deg); /* Efecto juguetón al pasar el mouse */
+}
+
+/* ==========================================================================
+   MENÚ DE NAVEGACIÓN
+   ========================================================================== */
+.menu {
+    background-color: #F9EBEA; /* Rosa pastel muy claro */
+    padding: 12px 0;
+    margin-bottom: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #556B2F; /* Verde oliva de las hojitas de la portada */
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #D36B78;
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   SECCIONES PRINCIPALES
+   ========================================================================== */
+section {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 24px; /* Bordes súper redondeados y amigables */
+    box-shadow: 0 8px 20px rgba(211, 107, 120, 0.08); /* Sombra suavecita color rosa */
+    text-align: center;
+}
+
+#inicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    border: 3px solid #F3C1C6;
+}
+
+#inicio h1 {
+    font-size: 32px;
+    color: #4A332D;
+    margin-top: 10px;
+}
+
+#inicio p {
+    font-style: italic;
+    color: #D36B78;
+    font-size: 18px;
+}
+
+/* ==========================================================================
+   SECCIÓN PRODUCTOS (Contenedor de cuadrícula)
+   ========================================================================== */
+/* Fix para tu contenedor de productos */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent; /* Para que no se encime con los recuadros */
+    box-shadow: none;
+    padding: 10px;
+}
+
+#productos h2 {
+    width: 100%; /* Hace que el título ocupe todo el ancho arriba */
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Tarjetas individuales de mermeladas */
+.recuadro {
+    flex: 1 1 260px;
+    max-width: 280px;
+    background-color: #FFFFFF;
+    border: 2px solid #F3C1C6;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.recuadro:hover {
+    transform: translateY(-5px); /* Flota un poquito al pasar el mouse */
+}
+
+.recuadro img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.recuadro h3 {
+    font-size: 20px;
+    color: #4A332D;
+}
+
+.recuadro p {
+    font-size: 14px;
+    color: #7A635D;
+    margin-bottom: 15px;
+    min-height: 45px; /* Alinea los botones si los textos son cortos */
+}
+
+/* Botones lindos */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #556B2F; /* Verde oliva orgánico */
+    color: #FFFFFF;
+    font-family: 'Fredoka', sans-serif;
+    padding: 8px 20px;
+    border-radius: 50px; /* Botón tipo píldora, cero esquinas duras */
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #D36B78; /* Cambia a rosa al pasar el mouse */
+}
+
+/* ==========================================================================
+   CONTACTO
+   ========================================================================== */
+#contacto ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#contacto li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding-left: 25px;
+    position: relative;
+}
+
+/* Un corazoncito sutil en lugar de los puntitos de la lista */
+#contacto li::before {
+    content: "🍓";
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #7A635D;
+    font-size: 14px;
+    background-color: #F9EBEA;
+    margin-top: 40px;
+    border-top: 2px solid #F3C1C6;
+}

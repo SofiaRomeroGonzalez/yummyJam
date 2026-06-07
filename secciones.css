@@ -1,0 +1,182 @@
+/* ==========================================================================
+   ESTILOS BASE (Catálogo Yummy Jam)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDFBF7; /* Crema suave de portada.png */
+    color: #4A332D;            /* Marrón chocolate */
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    font-family: 'Fredoka', sans-serif; /* Tipografía redondeada kawaii */
+    color: #D36B78;                     /* Rosa rojizo insignia */
+    text-align: center;
+}
+
+/* ==========================================================================
+   HEADER Y LOGO
+   ========================================================================== */
+header {
+    background-color: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px dashed #F3C1C6;
+}
+
+#logo img {
+    max-height: 120px;
+    height: auto;
+}
+
+/* ==========================================================================
+   BANNER DE PRESENTACIÓN (Mermeladas de cajón)
+   ========================================================================== */
+section {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 24px; /* Bordes súper redondeados y amigables */
+    box-shadow: 0 8px 20px rgba(211, 107, 120, 0.08); /* Sombra suavecita color rosa */
+    text-align: center;
+}
+
+#inicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    border: 3px solid #F3C1C6;
+}
+
+#inicio h1 {
+    font-size: 32px;
+    color: #4A332D;
+    margin-top: 10px;
+}
+
+#inicio p {
+    font-style: italic;
+    color: #D36B78;
+    font-size: 18px;
+}
+/* ==========================================================================
+   MENÚ DE NAVEGACIÓN INTERNO
+   ========================================================================== */
+.menu {
+    background-color: #F9EBEA; /* Fondo rosa pastel claro */
+    padding: 12px 0;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #556B2F; /* Verde oliva de las hojitas */
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #D36B78;
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   CUADRÍCULA DE PRODUCTOS
+   ========================================================================== */
+/* Contenedor principal de la tienda */
+#productos {
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    background-color: transparent; /* Quitamos fondos rígidos */
+    box-shadow: none;
+    
+    /* Activamos Flexbox mágico para acomodar las tarjetas de lado a lado */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Títulos grandes dentro de la zona de productos */
+#productos h2 {
+    width: 100%; /* Obliga al título a quedarse arriba de las tarjetas */
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #4A332D;
+}
+
+/* Tarjetas individuales de cada mermelada */
+.recuadro {
+    flex: 1 1 240px;
+    max-width: 260px;
+    background-color: #FFFFFF;
+    border: 2px solid #F3C1C6;
+    border-radius: 24px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(211, 107, 120, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recuadro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(211, 107, 120, 0.12);
+}
+
+.recuadro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.recuadro h3 {
+    font-size: 18px;
+    color: #4A332D;
+    margin-bottom: 8px;
+    min-height: 44px; /* Evita que las tarjetas se desalineen si el nombre es largo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo súper lindo para las etiquetas de precio */
+.recuadro p {
+    font-family: 'Fredoka', sans-serif;
+    color: #556B2F; /* Verde oliva para dar un toque natural de "precio justo" */
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #F4F9EC; /* Fondo verde sumamente tierno */
+    display: inline-block;
+    padding: 4px 15px;
+    border-radius: 30px;
+    margin-top: 5px;
+}
